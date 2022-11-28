@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const { Posts } = require("./models")
 const mysql2 = require("mysql2");
+require("dotenv").config();
 
 // mySQL 연결
 const db = mysql2.createConnection({
